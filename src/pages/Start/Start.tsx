@@ -10,12 +10,12 @@ import Contact from '@/pages/Start/Contact/Contact';
 const Start = () => {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Title />
       <Offer />
       <Skills />
       <About />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

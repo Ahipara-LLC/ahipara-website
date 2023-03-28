@@ -2,143 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Pattaya-Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pattaya-Regular'), local('Pattaya-Regular'),
-    url(../assets/fonts/Pattaya-Regular.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-Thin';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Inter-Thin'), local('Inter-Thin'),
-    url(../assets/fonts/Inter-Thin.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-ExtraLight';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Inter-ExtraLight'), local('Inter-ExtraLight'),
-    url(../assets/fonts/Inter-ExtraLight.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-Light';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Inter-Light'), local('Inter-Light'),
-    url(../assets/fonts/Inter-Light.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inter-Regular'), local('Inter-Regular'),
-    url(../assets/fonts/Inter-Regular.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-Medium';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Inter-Medium'), local('Inter-Medium'),
-    url(../assets/fonts/Inter-Medium.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-SemiBold';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Inter-SemiBold'), local('Inter-SemiBold'),
-    url(../assets/fonts/Inter-SemiBold.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-Bold';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Inter-Bold'), local('Inter-Bold'),
-    url(../assets/fonts/Inter-Bold.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-ExtraBold';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Inter-ExtraBold'), local('Inter-ExtraBold'),
-    url(../assets/fonts/Inter-ExtraBold.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter-Black';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Inter-Black'), local('Inter-Black'),
-    url(../assets/fonts/Inter-Black.woff2) format('woff2');
-}
+@import url('./base/fonts.css');
+@import url('./base/text.css');
+@import url('./components/button.css');
 
 html {
   scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  color: #070738;
   font-weight: 300;
-}
-
-b,
-strong,
-.strong {
-  font-weight: 500;
-}
-
-h1,
-.h1 {
-  font-family: 'Pattaya', serif;
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 46px;
-}
-@media (min-width: 640px) {
-  h1,
-  .h1 {
-    font-size: 52px;
-    line-height: 64px;
-  }
-}
-
-h2,
-.h2 {
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 40px;
-}
-@media (min-width: 640px) {
-  h2,
-  .h2 {
-    font-size: 40px;
-    line-height: 64px;
-  }
-}
-
-.carpet {
-  background-image: url('../assets/svg/carpet.svg');
-}
-
-.ahipara-logo {
-  background-image: url('../assets/svg/ahipara.svg');
-  width: 152px;
-  height: 72px;
-  position: absolute;
-  top: 24px;
-  left: 24px;
-}
-
-.eye {
-  background-image: url('../assets/svg/eye.svg');
+  /* font-size: 16px;
+  line-height: 28px; */
+  @apply text-base text-darkblue;
 }
